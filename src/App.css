@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --disabled-color:#95ef95;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:"Syne", sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+.product-main {
+    overflow: hidden;
+}
+.product-main img{
+    transition: 1s all;
+}
+.product-main:hover img{
+    transform: scale(1.2);
+}
+
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product-main:hover .product-cart{
+    bottom: 0;
+}
+.product-cart{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40%;
+    transition: 0.5s all;
+}
+.product-cart div{
+    
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+    cursor: pointer;
+   
+}
+.product-main img{
+    cursor: pointer;
+}
+
+.product-cart .cart-icon:hover{
+    border:2px solid #09681c;
+    color: #09681c;
+
+}
+.product-cart .wish-icon:hover{
+    border:2px solid rgb(219, 120, 120);
+color:rgb(220, 48, 48) ;
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+button:disabled{
+    background-color: var(--disabled-color) !important;
+
+}
+.cat-img{
+    cursor: pointer;
+}
+.cat-item{
+    overflow: hidden;
+}
+.img-caption{
+    width: 100%;
+    left: 0;
+    transition: 0.5s all;
+}
+.img-caption h2{
+    top:-25px;
+}
+.cat-item img{
+    transition: 0.5s all;
+}
+.cat-item:hover img{
+    transform: scale(1.2);
+}
+.cat-item .img-caption{
+    background-color: rgba(0,0,0,0.7);
+    padding-block: 15px;
+}
+.cat-item:hover .img-caption{
+    padding-block: 30px;
+
+}
+tr th, td{
+    cursor: pointer;
+}
